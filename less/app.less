@@ -218,7 +218,8 @@ header {
 	line-height: 1 !important;
 	overflow: hidden;
 
-	&.poster-news {
+	&.poster-tt {
+		background: @tribYellow;
 		.logo-wrapper {
 			.logo.logo-news {
 				display: inline-block !important;
@@ -232,8 +233,8 @@ header {
 		}
 	}
 
-	&.poster-music {
-		background: @musicDark;
+	&.poster-talk {
+		background: @black;
 		color: @musicLight;
 
 		.logo {
@@ -241,7 +242,7 @@ header {
 		}
 
 		.logo-wrapper {
-			background: @musicDark;
+			background: @talkBrightGreen;
 			padding-bottom: @grid-gutter-width * 2 - 14;
 
 			.logo.logo-music {
@@ -259,37 +260,6 @@ header {
 		}
 	}
 
-	&.poster-snap-judgement {
-		background: #C66137;
-		color: #fff;
-
-		.logo-wrapper {
-			background: #C66137;
-			color: #fff;
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-snap-judgement {
-				display: inline-block !important;
-				border: none;
-				width: 300px;
-
-				.sixteen-by-nine& {
-					width: 150px;
-				}
-			}
-		}
-	}
-
-	&.poster-fresh-air {
-		.logo-wrapper {
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-fresh-air {
-				display: inline-block !important;
-				border: none;
-			}
-		}
-	}
 
 	&.sixteen-by-nine {
 		height: 360px;

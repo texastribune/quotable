@@ -135,7 +135,7 @@ $(function(){
     $theme_buttons.on('click', function(){
         $theme_buttons.removeClass().addClass('btn btn-default');
         $(this).addClass('btn-primary');
-        $poster.removeClass('poster-news poster-music poster-fresh-air poster-snap-judgement')
+        $poster.removeClass('poster-tt poster-talk')
                     .addClass('poster-' + $(this).attr('id'));
     });
 
