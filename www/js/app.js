@@ -12,33 +12,33 @@ var $logo_wrapper = null;
 
 var quotes = [
     {
-        "quote": "I'd been drinking.",
-        "source": "Dennis Rodman"
+        "quote": "Oops.",
+        "source": "Rick Perry"
     },
-    {
-        "quote": "I've made a huge mistake.",
-        "source": "G.O.B."
-    },
-    {
-        "quote": "Yes, I have smoked crack cocaine",
-        "source": "Toronto Mayor Rob Ford",
-        "size": 65
-    },
-    {
-        "quote": "Annyong.",
-        "source": "Annyong",
-        "size": 90
-    },
-    {
-        "quote": "STEVE HOLT!",
-        "source": "Steve Holt",
-        "size": 65
-    },
-    {
-        "quote": "Whoa, whoa, whoa. There's still plenty of meat on that bone. Now you take this home, throw it in a pot, add some broth, a potato. Baby, you've got a stew going.",
-        "source": "Carl Weathers",
-        "size": 40
-    }
+    // {
+    //     "quote": "I've made a huge mistake.",
+    //     "source": "G.O.B."
+    // },
+    // {
+    //     "quote": "Yes, I have smoked crack cocaine",
+    //     "source": "Toronto Mayor Rob Ford",
+    //     "size": 65
+    // },
+    // {
+    //     "quote": "Annyong.",
+    //     "source": "Annyong",
+    //     "size": 90
+    // },
+    // {
+    //     "quote": "STEVE HOLT!",
+    //     "source": "Steve Holt",
+    //     "size": 65
+    // },
+    // {
+    //     "quote": "Whoa, whoa, whoa. There's still plenty of meat on that bone. Now you take this home, throw it in a pot, add some broth, a potato. Baby, you've got a stew going.",
+    //     "source": "Carl Weathers",
+    //     "size": 40
+    // }
 ];
 
 

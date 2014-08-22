@@ -41,3 +41,7 @@ confs/rendered/*
 data/copy.xls
 tumblr-theme.html
 www/assets
+
+
+#HFJ Fonts
+less/lib/hfj.less

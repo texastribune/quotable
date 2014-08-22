@@ -1,5 +1,6 @@
 @import "less/lib/bootstrap/bootstrap";
 @import "less/lib/font-awesome/font-awesome";
+@import "less/lib/hfj";
 @import "less/medium";
 
 // Global variables
@@ -13,6 +14,7 @@ html {
 body {
 	background: @gray-lighter;
 	min-width: 680px;
+	font-family: "Whitney SSma A", "Whitney SSma B", helvetica;
 }
 
 canvas {
@@ -219,14 +221,24 @@ header {
 	overflow: hidden;
 
 	&.poster-tt {
+		font-family: "Whitney SSma A", "Whitney SSma B", helvetica;
 		background: @tribYellow;
+
+		.left-quote,
+		p:last-child:after {
+			color: @white;
+		}
+
 		.logo-wrapper {
-			.logo.logo-news {
+
+			.text-talk { display: none; }
+
+			.logo.logo-tt {
 				display: inline-block !important;
 				border: none;
 
 				.sixteen-by-nine& {
-					height: 40px;
+					height: 30px !important;
 					width: auto;
 				}
 			}
@@ -234,6 +246,7 @@ header {
 	}
 
 	&.poster-talk {
+		font-family: "freight-sans-pro", helvetica;
 		background: @black;
 		color: @musicLight;
 
@@ -241,20 +254,32 @@ header {
 			border: 1px solid @musicLight;
 		}
 
+		.left-quote,
+		p:last-child:after {
+			color: @talkBrightGreen;
+		}
+
 		.logo-wrapper {
 			background: @talkBrightGreen;
-			padding-bottom: @grid-gutter-width * 2 - 14;
+			.text-talk {
+				display: block !important;
+				font-size: 10px;
+				border: none;
+				float: right;
+			}
 
-			.logo.logo-music {
+			.logo.logo-talk {
 				display: inline-block !important;
 				border: none;
 
+				img {
+					position: relative;
+					top: -4px;
+				}
+
 				.sixteen-by-nine& {
-					width: 242px;
-					height: 65px;
-					overflow: hidden;
-					background: url('../assets/npr-music-logo-small.png') no-repeat;
-					padding-left: 242px;
+					height: 30px !important;
+					width: auto;
 				}
 			}
 		}
@@ -277,7 +302,7 @@ header {
 		}
 
 		.logo-wrapper {
-			padding: @grid-gutter-width;
+			padding: ;
 
 			img {
 				width: 150px;
@@ -348,6 +373,7 @@ header {
 			p:last-child:after {
 				content:"\201D";
 				font-weight: 700;
+				// float: right;
 			}
 
 		}
@@ -387,14 +413,18 @@ header {
 		z-index: 100;
 		bottom: 0;
 		right: 0;
-		text-align: right;
-		padding:  @grid-gutter-width @grid-gutter-width * 2 @grid-gutter-width * 2;
+		text-align: left;
+		padding: @grid-gutter-width/4 @grid-gutter-width/2;
 		margin: 0;
 		font-size: 46px;
 		background: #fff;
 
 		.logo {
 			.hide;
+		}
+
+		img {
+			height: 40px;
 		}
 	}
 }
